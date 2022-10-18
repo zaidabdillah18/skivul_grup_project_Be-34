@@ -16,16 +16,5 @@ form.addEventListener('submit', function(e) {
     method: 'POST',
     body: payload,
     })
-    .then(res => {
-        if(res.ok){
-            console.log(`post berhasil : ${res.status}`);
-        }else{
-            console.log(`post tidak berhasil :  ${res.status}`);
-        }
-        return res
-    })
-   
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
+    .catch(error => console.log(error.status))
 })
