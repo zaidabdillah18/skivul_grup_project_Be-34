@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="inputDataPenyandang.css">  
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- <form id="form">
+        <label for="">Nik</label>
+        <input name="nik" id="nik" type="text">
+        <label for="">Nama</label>
+        <input name="nama" id="nama" type="text">
+        <label for="">Tempat Lahir</label>
+        <input name="tempatlahir" id="tempatlahir" type="text">
+        <label for="">Tanggal Lahir</label>
+        <input name="tanggallahir" id="tanggallahir" type="date">
+        <input type="radio" id="jeniskelamin" name="jeniskelamin" value="Laki-Laki">
+        <label for="">Laki-Laki</label>
+        <input type="radio" id="jeniskelamin" name="jeniskelamin" value="Perempuan">
+        <label for="">Perempuan</label><br>
+        <select name="agama" id="agama">
+            <option value="Islam" selected>Islam</option>
+            <option value="Protestan">Protestan</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Khonghucu">Khonghucu</option>
+        </select>
+        <label for="">No HP</label>
+        <input name="nohp" id="nohp" type="text">
+        <label for="">Alamat</label>
+        <textarea id="alamat" name="alamat" rows="4" cols="50">
+        </textarea>
+        <label for="">Provinsi</label>
+        <input name="provinsi" id="provinsi" type="text">
+        <label for="">Kota</label>
+        <input name="kota" id="kota" type="text">
+        <label for="">Kecamatan</label>
+        <input name="kecamatan" id="kecamatan" type="text">
+        <label for="">Desa</label>
+        <input name="desa" id="desa" type="text">
+        <label for="">Kode Pos</label>
+        <input name="kodepos" id="kodepos" type="text">
+        <button type="submit">Submit</button>
+        </form>  -->
+       
+        <main>
+            <form id="form">
+              <h2>Data Pribadi</h2>
+              <div class="mb-3">
+                <label for="" class="form-label"
+                  ><strong>Nomor Induk Kependudukan (NIK)</strong></label
+                >
+                <input
+                  type="text"
+                  placeholder="Contoh: 327512xxxxxx"
+                  class="form-control"
+                  name="nik"
+                  id="nik"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Nama Lengkap</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Deni Irwan"
+                  class="form-control"
+                  name="nama"
+                  id="nama"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Tempat Lahir</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Bandung"
+                  class="form-control"
+                  name="tempatlahir"
+                  id="tempatlahir"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"
+                  ><strong>Tanggal Lahir</strong></label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  name="tanggallahir"
+                  id="tanggallahir"
+                />
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="jeniskelamin"
+                  id="jeniskelamin"
+                  value="Laki-laki"
+                />
+                <label class="form-check-label" for="">Laki-laki</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="jeniskelamin"
+                  id="jeniskelamin"
+                  value="Perempuan"
+                />
+                <label class="form-check-label" for="">Perempuan</label>
+              </div>
+              <!-- <div class="mb-3">
+                <label for="" class="form-label"
+                  ><strong>Jenis Kelamin</strong></label
+                >
+                <br />
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox1"
+                    value="option1"
+                    name="jeniskelamin"
+                  />
+                  <label class="form-check-label" for="lakilaki">Laki - Laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox2"
+                    value="option2"
+                    name="jeniskelamin"
+                  />
+                  <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+              </div> -->
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Agama</strong></label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="agama"
+                  id="agama"
+                >
+                  <option selected>Pilih salah satu..</option>
+                  <option value="1">Islam</option>
+                  <option value="2">Kristen Protestan</option>
+                  <option value="3">Kristen Katolik</option>
+                  <option value="4">Hindu</option>
+                  <option value="5">Buddha</option>
+                  <option value="6">Konghucu</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>No HP</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: 0821xxxxxxxx"
+                  class="form-control"
+                  name="nohp"
+                  id="nohp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Alamat</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Jl. Ujung No.22 RT02/RW02"
+                  class="form-control"
+                  name="alamat"
+                  id="alamat"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Provinsi</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: DKI Jakarta"
+                  class="form-control"
+                  name="provinsi"
+                  id="provinsi"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Kota</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Jakarta"
+                  class="form-control"
+                  name="kota"
+                  id="kota"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Kecamatan</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Kramat Jati"
+                  class="form-control"
+                  name="kecamatan"
+                  id="kecamatan"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Desa</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Cipinang"
+                  class="form-control"
+                  name="desa"
+                  id="desa"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="" class="form-label"><strong>Kode Pos</strong></label>
+                <input
+                  type="text"
+                  placeholder="Contoh: 13510"
+                  class="form-control"
+                  name="kodepos"
+                  id="kodepos"
+                />
+              </div>
+              <div class="d-grid gap-2 col-2 mx-auto">
+                <button type="submit" class="btn btn-primary btn-lg" id="butt">
+                  Simpan
+                </button>
+              </div>
+            </form>
+          </main>
+    <script src="inputDataPenyandang.js"></script>
+</body>
+</html>

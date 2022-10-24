@@ -16,5 +16,10 @@ form.addEventListener('submit', function(e) {
     method: 'POST',
     body: payload,
     })
-    .catch(error => console.log(error.status))
+    if(payload){
+        console.log("Regis sukses")
+    }else{
+        console.log("Regis gagal")
+    }
+    
 })
