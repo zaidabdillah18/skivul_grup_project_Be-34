@@ -25,7 +25,7 @@ async function GetLogin(email,password){
         // console.log(ambildata)
         
     }else{
-          console.log("login gagal")
+        alert("Berhasil gagal");
     }
 
 // emailElement.value = ""
