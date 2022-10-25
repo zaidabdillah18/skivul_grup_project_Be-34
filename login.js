@@ -13,20 +13,23 @@ async function GetLogin(email,password){
  
     const data = await response.json();
     // const user = await data.filter(item => item.email === email && item.password === password);
-    const user = await data.find(d => d.email === email && d.password === password)
+    const user = await data.find(d => d.email === email)
     if(user){
-        localStorage.setItem("ID", user.id)
+    if(user.password === password){
         localStorage.setItem("Email", user.email)
         localStorage.setItem("Username", user.username)
         alert("Berhasil Login");
         window.location.href = "home.html";
         // let ambilID = localStorage.getItem("ID");
-        // let ambildata = JSON.parse(ambilID)
+        // let ambildata = JSON.parse(ambilID) 
         // console.log(ambildata)
         
     }else{
-        alert("Berhasil gagal");
+        alert("Email dan Password Anda Salah");
     }
+}else{
+    alert("Login Gagal");
+}
 
 // emailElement.value = ""
 // passwordElement.value = ""
